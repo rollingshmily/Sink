@@ -35,17 +35,25 @@
     {
       "binding": "KV",
       "preview_id": "facddbed910140e8ab33c6b3df0cd4ac",
-      "id": "facddbed910140e8ab33c6b3df0cd4ac" // IMPORTANT: Change this to your KV namespace ID
+      "id": "facddbed910140e8ab33c6b3df0cd4ac"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sink",
+      "database_id": "ea0d701e-baa9-45b0-98e3-519be0087b01",
+      "migrations_dir": "drizzle"
     }
   ],
   "r2_buckets": [
     {
       "binding": "R2",
       "preview_bucket_name": "sinkr2",
-      "bucket_name": "sinkr2" // IMPORTANT: Change this to your R2 bucket name, or create one with `wrangler r2 bucket create sink`
+      "bucket_name": "sinkr2"
     }
   ],
   "triggers": {
-    "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC
+    "crons": ["0 0 * * *"]
   }
 }
